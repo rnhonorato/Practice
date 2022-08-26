@@ -1,0 +1,349 @@
+:root {
+    /* font  */
+
+
+    --clr-accent-100: hsl(300, 43%, 22%);
+    --clr-accent-200: hsl(333, 80%, 67%);
+
+
+
+    --clr-neutral-100: hsl(303, 10%, 53%);
+    --clr-neutral-200: hsl(300, 24%, 96%);
+    --clr-neutral-300: hsl(0, 0%, 100%);
+
+
+    --clr-body-background: var(--clr-neutral-300);
+
+
+    --clr-main-heading: var(--clr-accent-100);
+    --clr-main-paragraph: var(--clr-neutral-100);
+
+
+    --clr-box-rating: var(--clr-neutral-200);
+    --clr-rating-paragraph: var(--clr-accent-100);
+
+
+    --clr-card-status: var(--clr-accent-200);
+    --clr-card-paragraph: var(--clr-neutral-300);
+    --clr-card: var(--clr-accent-100);
+
+
+
+    --ff-primary: 'League Spartan', sans-serif;
+
+
+    --ff-body: var(--ff-primary);
+
+
+    --fs-primary: 1rem;
+    ;
+    --fs-default: 1rem;
+    --fs-secondary: 3rem;
+
+
+    --fs-body: var(--fs-primary);
+    --fs-heading: var(--fs-secondary);
+    --fs-extra: var(--fs-default);
+
+
+
+    --fw-regular-400: 400;
+    --fw-regular-500: 500;
+    --fw-bold-700: 700;
+
+
+
+}
+
+/*reset*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body,
+p {
+    height: 100%;
+    font-size: var(--fs-body);
+
+}
+
+
+
+img,
+picture,
+svg {
+    width: 100%;
+    display: block;
+
+}
+
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    background-color: grey;
+}
+
+
+
+
+/* general styling */
+
+
+.container {
+    padding: 10em;
+    --max-width: 1440px;
+    --padding: 1rem;
+    background-color: var(--clr-body-background)
+}
+
+
+.container-heading-stars {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+.container-heading {
+    padding: 1em;
+    width: 400px;
+    padding-left: 0px;
+}
+
+.container-heading h1 {
+    color: var(--clr-accent-100);
+    font-weight: var(--fw-bold-700);
+    margin-bottom: 15px;
+    font-size: var(--fs-heading);
+
+}
+
+
+.container-heading p {
+    color: var(--clr-neutral-100);
+    line-height: 1.3;
+}
+
+
+.container-stars {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    margin-right: 60px;
+}
+
+
+.box-star {
+    border-radius: 1vmin;
+    background-color: var(--clr-box-rating);
+    width: 450px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 1em;
+    color: var(--clr-rating-paragraph);
+    font-weight: var(--fw-bold-700);
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+
+}
+
+.box-star img {
+    width: var(--fs-body);
+    display: inline-grid;
+}
+
+.img-box {
+    padding-left: 20px;
+    width: fit-content;
+}
+
+.box-star p {
+    padding-right: 40px;
+    width: fit-content;
+}
+
+
+
+.box-reviews {
+    margin-left: 75px;
+}
+
+.box-guru {
+    margin-left: 115px;
+}
+
+.box-bestech {
+    margin-left: 150px;
+}
+
+.container-reviews {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    margin-right: 45px;
+}
+
+
+.container-card {
+    background-color: var(--clr-card);
+    padding: 2em;
+    height: 250px;
+    width: 340px;
+    border-radius: 1vmin;
+    margin: 1em;
+    color: var(--clr-card-paragraph);
+}
+
+
+
+.container-card h1,
+h2 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular-500);
+
+}
+
+.container-card h1 {
+    margin-top: 10px;
+}
+
+.container-card h2 {
+    color: var(--clr-card-status);
+    margin-bottom: 35px;
+}
+
+.container-card p {
+    line-height: 1.2;
+    color:var(--clr-card-paragraph)
+}
+
+
+.grid-pf {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.img-pf {
+    width: min-content;
+}
+
+.img-pf img {
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+
+.grid-name {
+    margin-top: 10px;
+    margin-right: 85px;
+}
+
+
+.card-colton{
+   margin-left: 0px; 
+}
+.card-irene{
+    margin-top: 30px;
+}
+.card-anne{
+    margin-top: 60px;
+}
+
+@media(max-width: 50em){
+    .container{
+    width: 375px;
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow: row;
+    background-color: var(--clr-body-background);
+    }
+    .container-heading-stars {
+        display: grid;
+        grid-auto-flow: row;
+        padding-bottom: 30px;
+    }
+
+    .container-heading{
+        margin-top: 30px;
+        text-align: center;
+        width: 375px;
+    }
+
+    .container-heading h1{
+        padding: 10px 0px;
+        line-height: 0.8
+    }
+    .container-heading p{
+    }
+
+
+    .container-reviews {
+        display: grid;
+        grid-auto-flow: row;
+
+    }
+
+    .box-star{
+        grid-auto-flow: row;
+        width: 340px;
+        /* justify-content:space-around; */
+        padding-left: 70px;
+
+    }
+    
+    .img-box{
+        padding-left: 40px;
+        margin-bottom: 8px;
+
+    }
+    
+    .img-box img{
+        margin-right: 5px;
+    }
+
+
+    .box-reviews {
+        margin-left: 0px;
+    }
+    
+    .box-guru {
+        margin-left: 0px;
+    }
+    
+    .box-bestech {
+        margin-left: 0px;
+    }
+    
+
+
+    .container-reviews{
+        gap:1rem;
+        
+    }
+
+    .card-colton{
+        margin: 0px; 
+     }
+     .card-irene{
+         margin: 0px;
+     }
+     .card-anne{
+         margin: 0px;
+         margin-bottom: 100px;
+     }
+
+
+}
