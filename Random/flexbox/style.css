@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+}
+
+p{
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    padding: 10px;
+    background-color: gray;
+    gap: 1rem 1rem;
+    height: 800px;
+    flex-flow: row wrap;
+    align-content:space-around;
+    
+}
+
+.box{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 1vmin;
+    background-color: red;
+    width: 250px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;    
+    padding: 1em;
+    
+    
+}
+
+
+.box1{
+
+
+}
+.box2{
+    flex-grow: 3;
+
+}
+.box3{
+
+
+}
+.box4{
+
+
+}
+.box5{
+
+
+}
+.box6{
+
+
+}
+.box7{
+
+
+}
+.box8{
+
+
+}
+.box9{
+    flex-grow: 3;
+
+}
+.box10{
+
+
+}
+.box11{
+    
+
+}
+.box12{
+
+
+}

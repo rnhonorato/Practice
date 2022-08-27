@@ -1,0 +1,266 @@
+:root {
+    /* font  */
+
+
+    --clr-accent-100: hsl(180, 62%, 55%);
+    --clr-accent-200: hsl(0, 78%, 62%);
+    --clr-accent-300: hsl(34, 97%, 64%);
+    --clr-accent-400: hsl(212, 86%, 64%);
+
+
+
+    --clr-neutral-100: hsl(229, 6%, 66%);
+    --clr-neutral-200: hsl(234, 12%, 34%);
+    --clr-neutral-300: hsl(0, 0%, 98%);
+
+
+    --clr-body-background: var(--clr-neutral-300);
+
+
+    --clr-main-heading: var(--clr-neutral-100);
+    --clr-second-heading: var(--clr-neutral-200);
+    --clr-main-paragraph: var(--clr-neutral-100);
+
+
+    --clr-card1: var(--clr-accent-100);
+    --clr-card2: var(--clr-accent-200);
+    --clr-card3: var(--clr-accent-300);
+    --clr-card4: var(--clr-accent-400);
+
+    --clr-card-heading: var(--clr-neutral-200);
+    --clr-card-paragraph: var(--clr-neutral-100);
+
+
+
+    --ff-primary: 'Poppins', sans-serif;
+
+
+    --ff-body: var(--ff-primary);
+
+
+    --fs-primary: 0.938rem;
+    --fs-default: 1rem;
+    --fs-secondary: 1.5rem;
+
+
+    --fs-body: var(--fs-primary);
+    --fs-heading: var(--fs-secondary);
+
+
+    --fw-light-: 200;
+    --fw-regular-: 400;
+    --fw-semi-bold-: 600;
+
+
+}
+
+/*reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+html,
+body,
+p {
+    height: 100%;
+    font-size: 100%;
+}
+
+
+
+img,
+picture,
+svg {
+    width: 100%;
+    display: block;
+
+}
+
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    background-color: grey;
+    line-height: 1;
+
+}
+
+
+
+/*general styling*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    --max-width: 1440px;
+    height: auto;
+    background-color: var(--clr-body-background);
+    justify-content: center;
+}
+
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.container-header h1 {
+    margin-bottom: 12px;
+}
+
+.first-header {
+    color: var(--clr-main-heading);
+    font-weight: var(--fw-light-);
+}
+
+
+.second-heaading {
+    color: var(--clr-second-heading) !important;
+}
+
+.container-header p {
+    color: var(--clr-main-paragraph);
+    line-height: 1.4;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px;
+    align-content: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 0.7vmin;
+    width: 350px;
+    height: 250px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card h2 {
+    margin-top: 15px;
+    color: var(--clr-card-heading);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--clr-card-paragraph);
+    height: fit-content;
+    line-height: 1.6;
+}
+
+.card img {
+    margin-top: 35px;
+    height: auto;
+    width: 60px;
+    align-self: flex-end;
+}
+
+.center-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+}
+
+
+.card1 {
+    border: solid 4px rgba(255, 255, 255, 0);
+    border-top-color: var(--clr-card1);
+    margin-top: 60px;
+}
+
+.card2 {
+    border: solid 4px rgba(255, 255, 255, 0);
+    border-top-color: var(--clr-card2);
+
+}
+
+.card3 {
+    border: solid 4px rgba(255, 255, 255, 0);
+    border-top-color: var(--clr-card3);
+
+}
+
+.card4 {
+    border: solid 4px rgba(255, 255, 255, 0);
+    border-top-color: var(--clr-card4);
+    margin-top: 60px;
+}
+
+@media(max-width: 50em) {
+    .container {
+        --max-width: 375px;
+        padding: 1rem;
+    }
+
+
+
+    .container-header {
+        margin-top: 50px;
+        width: fit-content;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    h1 {
+        font-size: var(--fs-heading)
+    }
+
+
+
+    .container-cards {
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+
+    .cards {
+
+    }
+
+    .center-card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+    }
+
+
+
+
+    .card1 {
+        width: 350px;
+        margin-top: 0px;
+    }
+
+    .card2 {}
+
+    .card3 {}
+
+    .card4 {
+        width: 350px;
+        margin-top: 0px;
+    }
+}
