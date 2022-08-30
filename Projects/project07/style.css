@@ -1,0 +1,231 @@
+:root {
+    /* font  */
+
+
+    --clr-accent-100:hsl(179, 62%, 43%);
+    --clr-accent-200:hsl(179, 47%, 55%);
+    --clr-accent-300: hsl(71, 73%, 54%);
+
+
+
+    --clr-neutral-100: hsl(204, 43%, 93%);
+    --clr-neutral-200: hsl(217, 22%, 67%);
+    --clr-neutral-300: hsl(0, 0%, 98%);
+    --clr-neutral-400: hsla(0, 0%, 100%, 0.384);
+    --clr-neutral-500: hsla(0, 0%, 100%, 0.61);
+
+
+    --clr-body-background: var(--clr-neutral-100);
+
+
+    --clr-join-background: var(--clr-neutral-300);
+    --clr-join-heading: var(--clr-accent-100);
+    --clr-join-second-heading: var(--clr-accent-300);
+    --clr-join-paragraph: var(--clr-neutral-200);
+
+
+    --clr-sub-background: var(--clr-accent-100);
+    --clr-sub-heading: var(--clr-neutral-100);
+    --clr-sub-paragraph: var(--clr-neutral-100);
+    --clr-sub-button: var(--clr-accent-300);
+    --clr-grey-value:var(--clr-neutral-400);
+
+
+    --clr-whyus-background: var(--clr-accent-200);
+    --clr-whyus-heading: var(--clr-neutral-100);
+    --clr-whyus-paragraph: var(--clr-neutral-500);
+
+
+    --ff-primary: 'Karla', sans-serif;
+
+
+    --ff-body: var(--ff-primary);
+
+
+    --fs-ligh: 0.938rem;
+    --fs-default: 1rem;
+    --fs-heavy: 1.5rem;
+
+
+    --fs-body: var(--fs-default);
+    --fs-heading: var(--fs-default);
+
+   
+    --fw-regular-: 400;
+    --fw-bold-: 700;
+
+
+}
+
+/*reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+html,
+body,
+p {
+    height: 100%;
+    font-size: 100%;
+}
+
+
+
+img,
+picture,
+svg {
+    width: 100%;
+    display: block;
+
+}
+
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    line-height: 1;
+    background-color: var(--clr-body-background);
+
+}
+
+p{
+    height: fit-content;
+}
+
+/* general styling */
+
+body{
+    /* max-width: 1440px; */
+    /* margin: 0; */
+}
+
+.container{
+    margin: auto;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+           
+}
+
+.container-join{
+    background-color: var(--clr-join-background);
+    min-height: 200px;
+    padding: 3em;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+       
+}
+
+.container-join h1{
+    color:var(--clr-join-heading);
+    margin-bottom: 20px;
+    
+}
+
+.container-join h2{
+    color:var(--clr-join-second-heading);
+    margin-bottom: 15px;
+}
+
+.container-join p{
+    color: var(--clr-join-paragraph);
+    line-height: 1.6;
+}
+
+
+.container-sub-why{
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    
+    
+}
+
+.container-sub{
+    width: 720px;
+    height: auto;
+    padding: 3em;
+    background-color: var(--clr-sub-background);
+    border-bottom-left-radius: 1vmin;
+}
+
+.container-sub h3{
+    /* font-weight: var(--fw-regular-); */
+    color:var(--clr-sub-heading);
+    margin-bottom: 10px;
+}
+
+.container-sub h1{
+    color:var(--clr-sub-heading);
+    margin-bottom: 10px;
+}
+
+.container-sub p{
+    
+    color:var(--clr-sub-paragraph);
+    margin-bottom:30px;
+}
+
+.container-sub .button{
+    width: 240px;
+    height: fit-content;
+    padding: 1em;
+    background-color: var(--clr-sub-button);
+    color:var(--clr-sub-heading);
+    border: 0;
+    border-radius: 0.8vmin;
+
+}
+
+.grey-value{
+    font-weight: var(--fw-regular-);
+    margin-left: 10px;
+    font-size: var(--fs-body);
+    color: var(--clr-grey-value);
+    align-self: baseline;
+}
+
+
+
+.container-whyus{
+    width: 720px;
+    height: auto;
+    padding: 3em;
+    background-color: var(--clr-whyus-background);
+    border-bottom-right-radius: 1vmin;
+}
+
+.container-whyus h3{
+    color:var(--clr-whyus-heading);
+    margin-bottom: 20px;
+}
+
+.container-whyus p{
+    color:var(--clr-whyus-paragraph);
+    margin-bottom: 5px;
+    font-weight: var(--fw-regular-);
+}
+
+
+@media(max-width: 50em){
+    .container{
+        padding: 1em;
+    }
+
+
+    .container-sub-why{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        --max-width: 1440px;
+        height: auto;
+    
+    }
+}

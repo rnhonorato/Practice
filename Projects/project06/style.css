@@ -236,10 +236,6 @@ body {
     }
 
 
-    .cards {
-
-    }
-
     .center-card {
         display: flex;
         flex-direction: column;
@@ -255,9 +251,6 @@ body {
         margin-top: 0px;
     }
 
-    .card2 {}
-
-    .card3 {}
 
     .card4 {
         width: 350px;
