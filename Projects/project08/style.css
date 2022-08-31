@@ -1,0 +1,162 @@
+:root {
+    /* font  */
+
+
+    --clr-accent-100:hsl(257, 40%, 49%);
+    --clr-accent-200:hsl(300, 69%, 71%);
+    
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+
+    --clr-body-background: var(--clr-accent-100);
+    --clr-btn-landing-home: var(--clr-accent-100);
+
+
+
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+    
+
+    --ff-body: var(--ff-secondary);
+    --ff-headings: var(--ff-primary);
+
+
+    --fs-default: 1rem;
+    --fs-large: 2.4rem;
+
+
+    --fs-body: var(--fs-default);
+    --fs-heading: var(--fs-large);
+
+   
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+
+
+}
+
+/*reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+p {
+    font-size: 100%;
+}
+
+
+
+img,
+picture,
+svg {
+    width: 100%;
+    display: block;
+
+}
+
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    line-height: 1;
+    background-color: var(--clr-body-background);
+    color: var(--clr-neutral-100)
+
+}
+
+h1{
+    font-family: var(--ff-headings);
+}
+
+p{
+    height: fit-content;
+}
+
+
+/*general styling*/ 
+
+
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    
+}
+
+
+.container-header{
+    margin-bottom: 80px;
+}
+
+.logo img{
+    width: 250px;
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+
+.container-content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container-landing-image{
+    margin-right: 50px;
+}
+
+.container-landing-image img{
+    width: 700px;
+}
+
+.container-landing-text{
+    width: 500px;
+    margin-top: 50px;    
+}
+
+.container-landing-text h1{
+    line-height: 1.4;
+    margin-bottom: 18px;
+    font-size: var(--fs-heading);
+}
+
+.container-landing-text p{
+    line-height: 1.3;
+    margin-bottom: 20px;
+    
+}
+
+.button{
+    font-size: var(--fs-body);
+    padding: 0.9em;
+    width: 165px;
+    border-radius: 9vmin;
+    border:0px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-btn-landing-home);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+}
+
+
+
+i{
+    color: var(--clr-neutral-100);
+    margin-left: 15px
+}
