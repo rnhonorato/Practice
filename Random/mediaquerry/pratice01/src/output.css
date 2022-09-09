@@ -550,3 +550,57 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.tw-m-auto {
+  margin: auto;
+}
+
+.tw-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tw-bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.tw-p-4 {
+  padding: 1rem;
+}
+
+.tw-text-center {
+  text-align: center;
+}
+
+.tw-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.tw-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.tw-text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.tw-text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.tw-font-extrabold {
+  font-weight: 800;
+}
+
+.tw-font-semibold {
+  font-weight: 600;
+}
+
+.tw-font-extralight {
+  font-weight: 200;
+}
