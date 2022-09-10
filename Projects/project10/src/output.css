@@ -642,11 +642,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.tw-py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .tw-px-\[22px\] {
   padding-left: 22px;
   padding-right: 22px;
@@ -657,17 +652,20 @@ video {
   padding-bottom: 23px;
 }
 
-.tw-py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .tw-pl-4 {
   padding-left: 1rem;
 }
 
 .tw-pr-4 {
   padding-right: 1rem;
+}
+
+.tw-pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.tw-pt-12 {
+  padding-top: 3rem;
 }
 
 .tw-pt-4 {
@@ -692,14 +690,6 @@ video {
 
 .tw-pb-4 {
   padding-bottom: 1rem;
-}
-
-.tw-pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.tw-pt-12 {
-  padding-top: 3rem;
 }
 
 .tw-text-2xl {
