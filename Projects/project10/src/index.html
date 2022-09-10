@@ -6,119 +6,293 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonsai</title>
-    <link rel="stylesheet" href="style.css">
     <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="input.css">
 </head>
 
-<body class="">
+<body>
+    <div class="page-wrapper tw-p-5 ">
 
-    <nav>
-        <div class="nav-wrapper">
-            <div class="nav-logo">
-                <img src="#" alt="logo">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <img src="#" alt="logo">
+                </div>
+                <div class="nav-menus">
+                    <a href="">Product</a>
+                    <a href="">Templates</a>
+                    <a href="">Pricing</a>
+                    <a href="">Reviews</a>
+                </div>
+                <div class="nav-buttons">
+                    <button class="button">Login</button>
+                    <button class="button">Start Free</button>
+                </div>
             </div>
-            <div class="nav-menus">
-                <a href="">Product</a>
-                <a href="">Templates</a>
-                <a href="">Pricing</a>
-                <a href="">Reviews</a>
-            </div>
-            <div class="nav-buttons">
-                <button class="button">Login</button>
-                <button class="button">Start Free</button>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section>
-        <div class="heading-section1">
-            <h1>Plans & Pricing</h1>
-        </div>
-        <div class="toggle-wrapper">
-            <h2>MONTHLY</h2>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            <h2>YEARLY</h2>
-        </div>
-    </section>
-
-    <section>
-        <div class="plans-card">
-            <div class="card-starter">
-                <div class="card-header">
-                    <h3>Starter</h3>
-                    <p>Ideal for freelancers and contractors just starting out.</p>
-                </div>
-                <div class="card-price-wraper">
-                    <h1>24</h1>
-                    <h2>/MONTH</h2>
-                </div>
-                <div class="card-content">
-                    <p>All Templates</p>
-                    <p>Unlimited Clients & Projects</p>
-                    <p>Invoicing & Payments</p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <button class="button">Start Free</button>
+        <section class="tw-mt-8 tw-mb-8">
+            <div class="heading-section1 tw-mb-4">
+                <h1>Plans & Pricing</h1>
             </div>
-            <div class="card-professional">
-                <div class="card-header">
-                    <h3>Professional</h3>
-                    <p>Everything a growing independent business needs to thrive.</p>
+            <div class="toggle-wrapper| tw-flex tw-flex-row tw-justify-center">
+                <div class="toggle-month">
+                    <h2>MONTHLY</h2>
                 </div>
-                <div class="card-price-wraper">
-                    <h1>39</h1>
-                    <h2>/MONTH</h2>
+                <div class="toggle-switch tw-pl-4 tw-pr-4">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
-                <div class="card-content">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                <div class="toggle-year">
+                    <h2>YEARLY</h2>
                 </div>
-                <button class="button">Start Free</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="plans-seciton| tw-flex tw-gap-8 tw-flex-col | ">
+                <div
+                    class="card-starter |  tw-text-gray-600  tw-px-6 tw-pb-10 tw-pt-12 tw-flex tw-flex-col tw-border tw-border-gray-400 ">
+                    <div class="card-header">
+                        <h3 class="tw-text-2xl">Starter</h3>
+                        <p class="tw-text-sm ">Ideal for freelancers and contractors just starting out.</p>
+                    </div>
+                    <div
+                        class="card-price-wraper | tw-flex tw-flex-row tw-pt-4 tw-p-1 tw-border-b-2 tw-border-green-500">
+                        <h2 class="tw-text-3xl tw-self-center">&dollar;</h2>
+                        <h1 class="tw-text-7xl tw-pl-3 tw-pr-3 tw-font-semibold">24</h1>
+                        <h2 class="tw-text-2xl tw-self-end">/MONTH</h2>
+                    </div>
+                    <div class="card-content | tw-pt-10 tw-mb-6">
+                        <p class="tw-pb-4.5">All Templates</p>
+                        <p class="tw-pb-4.5">Unlimited Clients & Projects</p>
+                        <p class="tw-pb-4.5">Invoicing & Payments</p>
+                        <p class="tw-pb-4.5">Proposals & Contracts</p>
+                        <p class="tw-pb-4.5">Tasks & Time Tracking</p>
+                        <p class="tw-pb-4.5">Client CRM</p>
+                        <p class="tw-pb-4.5">Expense Tracking</p>
+                        <p class="tw-pb-4.5">Up to 5 Project Collaborators</p>
+                    </div>
+                    <div class="button-wrapper tw-flex tw-flex-rol tw-justify-center">
+                        <a href="#" class="button-cards tw-w-full tw-px-[22px] tw-py-[23px]">START FREE</a>
+                    </div>
+                </div>
+                <div
+                    class="card-professional |  tw-text-gray-600 tw-px-6 tw-pb-10 tw-pt-12 tw-flex tw-flex-col tw-border tw-border-gray-400 ">
+                    <div class="card-header">
+                        <h3 class="tw-text-2xl">Professional</h3>
+                        <p class="tw-text-sm ">Everything a growing independent business needs to thrive.</p>
+                    </div>
+                    <div
+                        class="card-price-wraper | tw-flex tw-flex-row tw-pt-4 tw-p-1 tw-border-b-2 tw-border-green-500">
+                        <h2 class="tw-text-3xl tw-self-center">&dollar;</h2>
+                        <h1 class="tw-text-7xl tw-pl-3 tw-pr-3 tw-font-semibold">39</h1>
+                        <h2 class="tw-text-2xl tw-self-end">/MONTH</h2>
+                    </div>
+                    <div class="card-content | tw-pt-10 tw-mb-6">
+                        <p class="tw-pb-4.5">Everything in Starter plus...</p>
+                        <p class="tw-pb-4.5">Custom Branding</p>
+                        <p class="tw-pb-4.5">Forms & Questionnaires</p>
+                        <p class="tw-pb-4.5">Workflow Automations</p>
+                        <p class="tw-pb-4.5">Client Portal</p>
+                        <p class="tw-pb-4.5">QuickBooks Integration</p>
+                        <p class="tw-pb-4.5">Calendly Integration</p>
+                        <p class="tw-pb-4.5">Zapier Integration</p>
+                        <p class="tw-pb-4.5">Up to 15 Project Collaborators</p>
+                    </div>
+                    <div class="button-wrapper tw-flex tw-flex-rol tw-justify-center">
+                        <a href="#" class="button-cards tw-w-full tw-px-[22px] tw-py-[23px]">START FREE</a>
+                    </div>
+
+                </div>
+                <div
+                    class="card-busines |  tw-text-gray-600 tw-px-6 tw-pb-10 tw-pt-12 flex tw-flex-col tw-border tw-border-gray-400 ">
+                    <div class="card-header">
+                        <h3 class="tw-text-2xl">Business</h3>
+                        <p class="tw-text-sm ">The perfect package for small businesses and agencies.</p>
+                    </div>
+
+                    <div
+                        class="card-price-wraper | tw-flex tw-flex-row tw-pt-4 tw-p-1 tw-border-b-2 tw-border-green-500">
+                        <h2 class="tw-text-3xl tw-self-center">&dollar;</h2>
+                        <h1 class="tw-text-7xl tw-pl-3 tw-pr-3 tw-font-semibold">79</h1>
+                        <h2 class="tw-text-2xl tw-self-end">/MONTH</h2>
+                    </div>
+
+                    <div class="card-content | tw-pt-10 tw-mb-6">
+                        <p class="tw-pb-4.5">Everything in Starter and Professional plus..</p>
+                        <p class="tw-pb-4.5">Subcontractor Management</p>
+                        <p class="tw-pb-4.5">Hiring Agreement Templates (1099 contracts)</p>
+                        <p class="tw-pb-4.5">Subcontractor Onboarding</p>
+                        <p class="tw-pb-4.5">Talent Pool</p>
+                        <p class="tw-pb-4.5">3 Team Seats (additional seats $9/month)</p>
+                        <p class="tw-pb-4.5">Accountant Access</p>
+                        <p class="tw-pb-4.5">Connect Multiple Bank Accounts</p>
+                        <p class="tw-pb-4.5">Unlimited Subcontractors</p>
+                        <p class="tw-pb-4.5">Unlimited Project Collaborators</p>
+                    </div>
+
+                    <div class="button-wrapper tw-flex tw-flex-rol ">
+                        <a href="#" class="button-cards tw-w-full tw-px-[22px] tw-py-[23px]">START FREE</a>
+                    </div>
+                </div>
 
             </div>
-            <div class="card-busines">
-                <div class="card-header">
-                    <h3>Business</h3>
-                    <p>The perfect package for small businesses and agencies.</p>
+
+        </section>
+
+        <section>
+            <div class="add-ons-section">
+                <div class="add-ons-heading">
+                    <h3>Super charge your work with add-ons</h3>
                 </div>
-                <div class="card-price-wraper">
-                    <h1>79</h1>
-                    <h2>/MONTH</h2>
+                <div class="add-ons-cards-wrapper">
+                    <div class="collaborators-card">
+                        <div class="card-info">
+                            <h4>Collaborators</h4>
+                            <p>Invite other users to specific projects for limited access and functionality.</p>
+                        </div>
+                        <div class="cards-pricing">
+                            <h3>Free</h3>
+                        </div>
+                    </div>
+                    <div class="partners-card">
+                        <div class="card-info">
+                            <h4>Partners</h4>
+                            <p>Invite other users for full account access and company management.</p>
+                        </div>
+                        <div class="cards-pricing">
+                            <h3>&dollar; 9</h3>
+                            <p>/MONTH</p>
+                        </div>
+                    </div>
+                    <div class="bonsai-tax-card">
+                        <div class="card-info">
+                            <h4>Bonsai Tax</h4>
+                            <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                            <a href="#">LEARN MORE &gt;</a>
+                        </div>
+                        <div class="cards-pricing">
+                            <h3>&dollar; 10</h3>
+                            <p>/MONTH</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <button class="button">Start Free</button>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <article>
+            <div class="card-your-business">
+                <h1>It&apos;s your business.<br>
+                    We&apos;re here to help it grow.</h1>
+                <button class="button">START FREE</button>
+            </div>
+        </article>
 
-    <section>
-    </section>
+        <section>
+            <div class="faq-section">
+                <div class="faq-heading">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div class="faq-content">
+                    <h2>How does the free trial work?</h2>
+                    <p>When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's
+                        Workflow or Workflow Plus Features! You will need to enter your credit card information to begin
+                        your trial, but don't worry - we won't charge you anything until the subscription ends! If you
+                        wish to cancel at any time during the trial period, you can do so through your Subscriptions
+                        Settings Page.</p>
+                </div>
+                <div class="faq-content">
+                    <h2>Can I change plans anytime?</h2>
+                    <p>Yes, you can from within your account. If you have already subscribed to a plan, or want to
+                        downgrade or upgrade your current one, you can do this by going to your "Settings" and
+                        "Subscription".</p>
+                </div>
+                <div class="faq-content">
+                    <h2>How do I pause my Bonsai subscription?</h2>
+                    <p>We totally understand that with the nature of freelancing, work ebbs and flows so you might not
+                        always need your Bonsai subscription to remain active! The good news is that you can cancel or
+                        pause your monthly subscription at any time without penalty. Once cancelled, you'll be able to
+                        continue logging in to access all your documents and even continue to use our free features,
+                        like Time Tracking! In order to cancel your subscription, login to your Bonsai account.</p>
+                </div>
+                <div class="faq-content">
+                    <h2>What is your refund policy?</h2>
+                    <p>If you contact us within 2 weeks of being charged for your subscription, we will be happy to
+                        issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription
+                        from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued.
+                        This applies to both monthly and annual plans.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-product">
+                    <h5>PRODUCT</h5>
+                    <ul>
+                        <li><a href="">Proposals</a></li>
+                        <li><a href="">Contracts</a></li>
+                        <li><a href="">Invoicing</a></li>
+                        <li><a href="">Client CRM</a></li>
+                        <li><a href="">Time Tracking</a></li>
+                        <li><a href="">Task Tracking</a></li>
+                        <li><a href="">Forms</a></li>
+                        <li><a href="">Accounting</a></li>
+                        <li><a href="">Bonsai Tax</a></li>
+                        <li><a href="">Bonsai Cash</a></li>
+                    </ul>
+                </div>
+                <div class="footer-pricing">
+                    <h5>Pricing</h5>
+                    <a href="">Bonsai Reviews</a>
+                </div>
+                <div class="footer-free-resources">
+                    <h5>FREE RESOURCES</h5>
+                    <ul>
+                        <li><a href="">Freelance Resources</a></li>
+                        <li><a href="">Freelance Blog by Bonsai</a></li>
+                        <li><a href="">How to Write a Contract</a></li>
+                        <li><a href="">Online Signature Maker</a></li>
+                        <li><a href="">Self-Employed Taxes Hub</a></li>
+                        <li><a href="">Self-Employed Tax Calculator</a></li>
+                        <li><a href="">Self-Employed Tax Deductions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-templates">
+                    <h5>Templates</h5>
+                    <ul>
+                        <li><a href="">Invoice Templates</a></li>
+                        <li><a href="">Proposal Templates</a></li>
+                        <li><a href="">Contract Templates</a></li>
+                        <li><a href="">Agreement Templates</a></li>
+                        <li><a href="">Scope of Work Templates</a></li>
+                        <li><a href="">Quote Templates</a></li>
+                        <li><a href="">Credit Note Templates</a></li>
+                        <li><a href="">Estimate Templates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bonsai">
+                    <h5>BONSAI</h5>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Affiliates</a></li>
+                        <li><a href="">Write for Us</a></li>
+                        <li><a href="">Comparisons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 </body>
 

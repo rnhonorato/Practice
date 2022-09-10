@@ -410,6 +410,18 @@ video {
   height: auto;
 }
 
+.button-cards {
+  background-color:rgb(0, 163, 126);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  min-height: 3rem;
+  width: auto;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -551,3 +563,170 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.tw-mt-8 {
+  margin-top: 2rem;
+}
+
+.tw-mb-8 {
+  margin-bottom: 2rem;
+}
+
+.tw-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.tw-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.tw-flex {
+  display: flex;
+}
+
+.tw-w-full {
+  width: 100%;
+}
+
+.tw-flex-row {
+  flex-direction: row;
+}
+
+.tw-flex-col {
+  flex-direction: column;
+}
+
+.tw-justify-center {
+  justify-content: center;
+}
+
+.tw-gap-8 {
+  gap: 2rem;
+}
+
+.tw-self-end {
+  align-self: flex-end;
+}
+
+.tw-self-center {
+  align-self: center;
+}
+
+.tw-border {
+  border-width: 1px;
+}
+
+.tw-border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.tw-border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.tw-border-green-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
+}
+
+.tw-p-5 {
+  padding: 1.25rem;
+}
+
+.tw-p-1 {
+  padding: 0.25rem;
+}
+
+.tw-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.tw-py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.tw-px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.tw-py-\[23px\] {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.tw-py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.tw-pl-4 {
+  padding-left: 1rem;
+}
+
+.tw-pr-4 {
+  padding-right: 1rem;
+}
+
+.tw-pt-4 {
+  padding-top: 1rem;
+}
+
+.tw-pl-3 {
+  padding-left: 0.75rem;
+}
+
+.tw-pr-3 {
+  padding-right: 0.75rem;
+}
+
+.tw-pt-10 {
+  padding-top: 2.5rem;
+}
+
+.tw-pb-4\.5 {
+  padding-bottom: 1.125rem;
+}
+
+.tw-pb-4 {
+  padding-bottom: 1rem;
+}
+
+.tw-pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.tw-pt-12 {
+  padding-top: 3rem;
+}
+
+.tw-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.tw-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.tw-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.tw-text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.tw-font-semibold {
+  font-weight: 600;
+}
+
+.tw-text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
