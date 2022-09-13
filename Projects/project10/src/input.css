@@ -15,4 +15,12 @@
     min-height: 3rem;
     width: auto;
   }
+  
+  .add-ons-box{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 15px;
+  }
+
+  .shadow-card{
+    box-shadow: 0 0 68px 0 rgba(2,4,69,.08);
+  }
 }

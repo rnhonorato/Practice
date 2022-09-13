@@ -422,6 +422,10 @@ video {
   width: auto;
 }
 
+.add-ons-box{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 15px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -563,6 +567,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.tw-order-first {
+  order: -9999;
+}
+
 .tw-mt-8 {
   margin-top: 2rem;
 }
@@ -577,6 +585,14 @@ video {
 
 .tw-mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.tw-mt-10 {
+  margin-top: 2.5rem;
+}
+
+.tw-mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .tw-flex {
@@ -603,6 +619,30 @@ video {
   gap: 2rem;
 }
 
+.tw-gap-2 {
+  gap: 0.5rem;
+}
+
+.tw-gap-6 {
+  gap: 1.5rem;
+}
+
+.tw-gap-3 {
+  gap: 0.75rem;
+}
+
+.tw-gap-4 {
+  gap: 1rem;
+}
+
+.tw-gap-1 {
+  gap: 0.25rem;
+}
+
+.tw-gap-10 {
+  gap: 2.5rem;
+}
+
 .tw-self-end {
   align-self: flex-end;
 }
@@ -619,14 +659,14 @@ video {
   border-bottom-width: 2px;
 }
 
-.tw-border-gray-400 {
+.tw-border-\[\#00b289\] {
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(0 178 137 / var(--tw-border-opacity));
 }
 
-.tw-border-green-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
+.tw-bg-\[\#f2faff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 250 255 / var(--tw-bg-opacity));
 }
 
 .tw-p-5 {
@@ -635,6 +675,18 @@ video {
 
 .tw-p-1 {
   padding: 0.25rem;
+}
+
+.tw-p-7 {
+  padding: 1.75rem;
+}
+
+.tw-p-8 {
+  padding: 2rem;
+}
+
+.tw-p-2 {
+  padding: 0.5rem;
 }
 
 .tw-px-6 {
@@ -692,6 +744,14 @@ video {
   padding-bottom: 1rem;
 }
 
+.tw-text-center {
+  text-align: center;
+}
+
+.tw-align-baseline {
+  vertical-align: baseline;
+}
+
 .tw-text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -712,11 +772,46 @@ video {
   line-height: 1;
 }
 
+.tw-text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.tw-text-\[40px\] {
+  font-size: 40px;
+}
+
+.tw-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .tw-font-semibold {
   font-weight: 600;
 }
 
-.tw-text-gray-600 {
+.tw-font-light {
+  font-weight: 300;
+}
+
+.tw-font-bold {
+  font-weight: 700;
+}
+
+.tw-leading-relaxed {
+  line-height: 1.625;
+}
+
+.tw-leading-loose {
+  line-height: 2;
+}
+
+.tw-text-\[\#4c525a\] {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(76 82 90 / var(--tw-text-opacity));
+}
+
+.tw-text-\[\#00b289\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 178 137 / var(--tw-text-opacity));
 }
