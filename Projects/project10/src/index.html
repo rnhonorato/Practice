@@ -12,50 +12,53 @@
 </head>
 
 <body>
-    <div class="page-wrapper | tw-p-5 tw-text-[#4c525a] tw-flex tw-flex-col tw-gap-10">
+    <div class="page-wrapper | tw-p-5 tw-text-[#4c525a] tw-flex tw-flex-col tw-gap-10 md:tw-mx-auto md:tw-justify-center">
 
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper | tw-flex tw-flex-row tw-p-2 md:tw-justify-between md:tw-mx-auto md:tw-px-7">
                 <div class="nav-logo">
-                    <img src="#" alt="logo">
+                    <img src="images/bonsai-logo.svg" alt="bonsai-logo" width="150">
                 </div>
-                <div class="nav-menus">
+                <div class="nav-menus nav-off-mobile md:tw-flex md:tw-gap-10">
                     <a href="">Product</a>
                     <a href="">Templates</a>
                     <a href="">Pricing</a>
                     <a href="">Reviews</a>
                 </div>
-                <div class="nav-buttons">
-                    <button class="button">Login</button>
-                    <button class="button">Start Free</button>
+                <div class="nav-buttons | nav-off-mobile | md:tw-flex md:tw-gap-2 md:tw-text-sm">
+                    <button class="button button-cards button-cards-inverter tw-justify-center tw-px-5 md:tw-font-medium">LOG IN</button>
+                    <button class="button button-cards tw-justify-center tw-px-5"><strong>Start Free</strong></button>
                 </div>
             </div>
         </nav>
-
-      
-
+        <div class="blue-shape _12 sm:tw-hidden"></div>
         <section>
-            <div class="heading-section1 tw-mb-4">
-                <h1>Plans & Pricing</h1>
-            </div>
-            <div class="toggle-wrapper| tw-flex tw-flex-row tw-justify-center">
-                <div class="toggle-month">
-                    <h2>MONTHLY</h2>
+            
+            <div class="plans-pricing-wrapper |  tw-flex tw-flex-col tw-gap-10 | md:tw-flex-row md:tw-justify-center md:tw-pt-9 md:tw-gap-12">
+                <div class="heading-section1 | tw-mb-4 tw-text-2xl | md:tw-text-4xl ">
+                    <h1>Plans & Pricing</h1>
                 </div>
-                <div class="toggle-switch tw-pl-4 tw-pr-4">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="toggle-year">
-                    <h2>YEARLY</h2>
+                
+                <div class="toggle-wrapper| tw-flex tw-flex-row tw-justify-center tw-tracking-wider tw-gap-3 | md:tw-pt-3">
+                    <div class="toggle-month | tw-font-semibold tw-pt-1 ">
+                        <h2>MONTHLY</h2>
+                    </div>
+                    <div class="toggle-switch | tw-pl-4 tw-pr-4">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-year | tw-font-semibold tw-pt-1">
+                        <h2>YEARLY</h2>
+                    </div>
+                    <img src="images/two-month-text.svg" alt="two-month-free" class="offer-img">
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="plans-seciton| tw-flex tw-gap-8 tw-flex-col | ">
+            <div class="plans-seciton| tw-flex tw-gap-8 tw-flex-col |  | md:tw-flex-row">
                 <div
                     class="card-starter | tw-px-6 tw-pb-10 tw-pt-12 tw-flex tw-flex-col tw-border ">
                     <div class="card-header">
@@ -106,7 +109,7 @@
                             <p>Up to 5 Project Collaborators</p>
                         </div>
                     </div>
-                    <div class="button-wrapper tw-flex tw-flex-rol tw-justify-center">
+                    <div class="button-wrapper tw-flex tw-flex-rol tw-justify-center md:tw-mt-auto">
                         <a href="#"
                             class="button-cards | tw-w-full tw-px-[22px] tw-py-[23px] tw-flex tw-justify-center"><strong>START
                                 FREE</strong></a>
@@ -166,7 +169,7 @@
                             <p>Up to 15 Project Collaborators</p>
                         </div>
                     </div>
-                    <div class="button-wrapper tw-flex tw-flex-rol tw-justify-center">
+                    <div class="button-wrapper tw-flex tw-flex-rol tw-justify-center | md:tw-mt-auto">
                         <a href="#"
                             class="button-cards tw-w-full tw-px-[22px] tw-py-[23px] tw-flex tw-justify-center"><strong>START
                                 FREE</strong></a>
@@ -234,7 +237,7 @@
                         </div>
                     </div>
 
-                    <div class="button-wrapper tw-flex tw-flex-rol ">
+                    <div class="button-wrapper tw-flex tw-flex-rol | md:tw-mt-auto ">
                         <a href="#"
                             class="button-cards tw-w-full tw-px-[22px] tw-py-[23px] tw-flex tw-justify-center"><strong>START
                                 FREE</strong></a>
@@ -251,9 +254,9 @@
                     <h2>Super charge your work with add-ons</h2>
                 </div>
                 <div class="add-ons-cards-wrapper | tw-flex tw-flex-col tw-gap-3 ">
-                    <div class="collaborators-card | tw-p-7 tw-flex tw-flex-col tw-gap-4 add-ons-box">
+                    <div class="collaborators-card | tw-p-10 tw-flex tw-flex-col tw-gap-4 add-ons-box | md:tw-flex-row-reverse md:tw-justify-between md:tw-px-10">
                         <div class="card-info">
-                            <div class="card-info-headings | tw-font-semibold ">
+                            <div class="card-info-headings | tw-font-semibold md:tw-text-xl ">
                                 <h4>Collaborators</h4>
                             </div>
                             <div class="card-info-text | tw-font-light">
@@ -264,9 +267,9 @@
                             <h3>Free</h3>
                         </div>
                     </div>
-                    <div class="partners-card | tw-p-7 tw-flex tw-flex-col tw-gap-4 add-ons-box">
+                    <div class="partners-card | tw-p-10 tw-flex tw-flex-col tw-gap-4 add-ons-box | md:tw-flex-row-reverse md:tw-justify-between md:tw-px-10">
                         <div class="card-info">
-                            <div class="card-info-headings | tw-font-semibold ">
+                            <div class="card-info-headings | tw-font-semibold md:tw-text-xl ">
                                 <h4>Partners</h4>
                             </div>
                             <div class="card-info-text | tw-font-light">
@@ -282,9 +285,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bonsai-tax-card | tw-p-7 tw-flex tw-flex-col tw-gap-4 add-ons-box">
+                    <div class="bonsai-tax-card | tw-p-10 tw-flex tw-flex-col tw-gap-4 add-ons-box | md:tw-flex-row-reverse md:tw-justify-between md:tw-px-10">
                         <div class="card-info">
-                            <div class="card-info-headings | tw-font-semibold ">
+                            <div class="card-info-headings | tw-font-semibold md:tw-text-xl ">
                                 <h4>Bonsai Tax</h4>
                             </div>
                             <div class="card-info-text |  tw-font-light tw-mb-2">
