@@ -456,6 +456,13 @@ video {
   height: 120%;
 }
 
+.offer-img{
+  position: absolute;
+  left: auto;
+  right:10%;
+  bottom: 570px;
+}
+
 .add-ons-box{
   box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 15px;
 }
@@ -464,19 +471,12 @@ video {
   display: none;
 }
 
-.offer-img{
-  position: absolute;
-  left: auto;
-  right:10%;
-  bottom: 600px;
-}
-
 @media(min-width:50em){
   .offer-img{
     position: absolute;
     left: auto;
     right:22%;
-    bottom: 640px;
+    bottom: 610px;
   }
 }
 
@@ -710,8 +710,16 @@ input:checked + .slider:before {
   display: flex;
 }
 
+.tw-hidden {
+  display: none;
+}
+
 .tw-w-full {
   width: 100%;
+}
+
+.tw-max-w-screen-sm {
+  max-width: 640px;
 }
 
 .tw-flex-row {
@@ -724,6 +732,10 @@ input:checked + .slider:before {
 
 .tw-justify-center {
   justify-content: center;
+}
+
+.tw-justify-between {
+  justify-content: space-between;
 }
 
 .tw-gap-10 {
@@ -775,17 +787,22 @@ input:checked + .slider:before {
   border-color: rgb(0 178 137 / var(--tw-border-opacity));
 }
 
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .tw-bg-\[\#f2faff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 250 255 / var(--tw-bg-opacity));
 }
 
-.tw-p-5 {
-  padding: 1.25rem;
+.tw-p-4 {
+  padding: 1rem;
 }
 
-.tw-p-2 {
-  padding: 0.5rem;
+.tw-p-5 {
+  padding: 1.25rem;
 }
 
 .tw-p-1 {
@@ -798,6 +815,10 @@ input:checked + .slider:before {
 
 .tw-p-8 {
   padding: 2rem;
+}
+
+.tw-p-2 {
+  padding: 0.5rem;
 }
 
 .tw-px-5 {
@@ -818,6 +839,10 @@ input:checked + .slider:before {
 .tw-py-\[23px\] {
   padding-top: 23px;
   padding-bottom: 23px;
+}
+
+.tw-pt-8 {
+  padding-top: 2rem;
 }
 
 .tw-pt-1 {
@@ -936,12 +961,6 @@ input:checked + .slider:before {
   color: rgb(0 178 137 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:tw-hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:tw-mx-auto {
     margin-left: auto;
@@ -952,8 +971,16 @@ input:checked + .slider:before {
     margin-top: auto;
   }
 
+  .md\:tw-block {
+    display: block;
+  }
+
   .md\:tw-flex {
     display: flex;
+  }
+
+  .md\:tw-max-w-screen-lg {
+    max-width: 1024px;
   }
 
   .md\:tw-flex-row {
@@ -982,6 +1009,10 @@ input:checked + .slider:before {
 
   .md\:tw-gap-12 {
     gap: 3rem;
+  }
+
+  .md\:tw-p-1 {
+    padding: 0.25rem;
   }
 
   .md\:tw-px-7 {

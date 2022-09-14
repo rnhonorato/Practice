@@ -46,14 +46,19 @@
   }
 
   .blue-shape._12{
-    top: -88%;
-    
+    top: -88%;    
     left: 23%;
     width: 90%;
     height: 120%;
     
   }
 
+  .offer-img{
+    position: absolute;
+    left: auto;
+    right:10%;
+    bottom: 570px;
+  }
   
 
   .add-ons-box{
@@ -70,19 +75,14 @@
   }
  
 
-.offer-img{
-  position: absolute;
-  left: auto;
-  right:10%;
-  bottom: 600px;
-}
+
 
 @media(min-width:50em){
   .offer-img{
     position: absolute;
     left: auto;
     right:22%;
-    bottom: 640px;
+    bottom: 610px;
   }
 }
 
