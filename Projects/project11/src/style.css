@@ -1,0 +1,90 @@
+/* VARIABLES */
+
+:root {
+    
+
+    --clr-accent-100: #eafaf3;
+    --clr-accent-200: #f4f6ff;
+
+
+    --clr-neutral-100: #202223;
+    --clr-neutral-200: #fafbfb;
+    --clr-neutral-300: #ffffff;
+    --clr-neutral-400: #5c5f62;
+   
+
+
+
+    --clr-body-background:var(--clr-neutral-300);
+    --clr-headings:var(--clr-neutral-100);
+    --clr-paragraphy:var(--clr-neutral-400);
+    
+
+
+
+    --ff-primary: 'Inter', sans-serif;
+
+
+    --ff-body: var(--ff-primary);
+
+
+    --fs-default: 1rem;
+
+
+
+    --fs-body: var(--fs-default);
+
+
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 900;
+    
+
+
+}
+
+
+
+
+
+
+/* RESET CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+p {
+    font-size: 100%;
+}
+
+img,
+picture,
+svg {
+    width: 100%;
+    display: block;
+
+}
+
+body {
+    font-family: var(--ff-body);
+    /* font-size: var(--fs-body); */
+    /* line-height: 1; */
+    background-color: var(--clr-body-background);
+
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
