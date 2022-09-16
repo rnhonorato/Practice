@@ -8,25 +8,25 @@
     <title>Podia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="header-wraper">
+        <div class="header-wrapper sticky">
             <div class="header-logo">
-                <img src="index.html" alt="shopify-logo">
+                <a href="index.html"><img class="logo-header" src="images/shopify-dev-logo-light-.svg" alt="shopify-logo"></a>
             </div>
-            <div class="header-nav">
-                <ul>
+            <nav class="header-nav">
+                <ul class="header-nav">
                     <li><a href="">Apps</a></li>
                     <li><a href="">Themes</a></li>
                     <li><a href="">Custom Storefronts</a></li>
                     <li><a href="">Marketplaces</a></li>
                     <li><a href="">APIs and references</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <!-- SEARCH -->
             <!-- <div class="header-searcher">
@@ -34,9 +34,9 @@
             </div> -->
 
             <div class="header-login">
-                <ul>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <ul class="login-ul">
+                    <li><a class="login-buttom" href="#">Log in</a></li>
+                    <li><a class="login-buttom" href="#">Sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -45,33 +45,41 @@
     </header>
 
     <div class="body-wrapper">
-        <section class="hero-content">
+        <section class="section-build-anything">
             <div class="hero-heading">
-                <h1>Build anything.Reimagine commerce.</h1>
-                <p>Millions of merchants trust Shopify to run their business—but they need developers to build the tools that help them achieve independence. Access powerful APIs to bring your ideas to life on the platform that makes commerce better for everyone.</p>
+                <h1 class="build-heading-jumbo">Build anything.<br>
+                    Reimagine commerce.</h1>
+                <p class="p-build">Millions of merchants trust Shopify to run their business—but they need developers to build the tools
+                    that help them achieve independence. Access powerful APIs to bring your ideas to life on the
+                    platform thatpakes commerce better for everyone.</p>
             </div>
             <div class="hero-features">
                 <ul class="features-content">
                     <li class="features-list">
-                        <h3>Develop apps that solve complex merchant problems</h3>
-                        <p>Expansive GraphQL and REST APIs let you integrate into Shopify's admin, online store, checkout, and more.</p>
+                        <p class="heading-3">Develop apps that solve complex merchant problems</p>
+                        <p class="p-features-list">Expansive <a class="features-link" href="#">GraphQL</a> and <a class="features-link"  href="#">REST APIs</a> let you integrate into Shopify's admin, online store,
+                            checkout, and more.</p>
                     </li>
                     <li class="features-list">
-                        <h3>ntegrate seamlessly into existing workflows</h3>
-                        <p>Embed your app&apos;s features with App Bridge. Create high quality experiences with the ready-to-build Polaris component library.</p>
+                        <p class="heading-3">Integrate seamlessly into existing workflows</p>
+                        <p class="p-features-list">Embed your app&apos;s features with <a class="features-link"  href="#">App Bridge</a>. Create high quality experiences with the
+                            ready-to-build <a class=" features-link"  href="#">Polaris</a> component library.</p>
                     </li>
                     <li class="features-list">
-                        <h3>Help merchants express themselves</h3>
-                        <p>Use Liquid to build beautiful theme templates. Get started with Dawn, our blazingly fast, accessible reference theme.</p>
+                        <p class="heading-3">Help merchants express themselves</p>
+                        <p class="p-features-list">Use <a class="features-link"  href="#">Liquid</a> to build beautiful theme templates. Get started with <a class=" features-link"  href="#">Dawn</a>, our blazingly fast,
+                            accessible reference theme.</p>
                     </li>
                     <li class="features-list">
-                        <h3>Ship custom shopping experiences</h3>
-                        <p>dd Shopify to any web, mobile, or gaming experience with the powerful Storefront API and SDKs, plus any front-end stack you want. Use Marketplace Kit to connect your platform and its users to millions of Shopify merchants and their products.</p>
+                        <p class="heading-3">Ship custom shopping experiences</p>
+                        <p class="p-features-list">dd Shopify to any web, mobile, or gaming experience with the powerful <a class="features-link"  href="#">Storefront API</a> and
+                            SDKs, plus any front-end stack you want. Use <a class="features-link" href="#">Marketplace Kit</a> to connect your platform and
+                            its users to millions of Shopify merchants and their products.</p>
                     </li>
                 </ul>
                 <div class="hero-start-building">
                     <div class="start-building-heading">
-                        <h2>Start Building:</h2>
+                        <p class="heading-3">Start Building:</p>
                     </div>
                     <div class="start-build-cards-wrapper">
                         <a href="#">
@@ -119,6 +127,153 @@
             </div>
 
         </section>
+        <section class="section-lauch-app">
+            <div class="launch-app-heading">
+                <h2>Launch your app or theme to millions of merchants</h2>
+                <h3>App Store</h3>
+                <p>Get your app in front of the right merchants. With personalized recommendations and multiple billing
+                    options, the Shopify App Store is where merchants go to find the apps their business needs most.</p>
+                <h3>Theme Store</h3>
+                <p>Sell your theme to merchants building their brands on the Shopify Theme Store, which offers flexible
+                    pricing and targeted merchandising.</p>
+
+            </div>
+            <div class="launch-app-box">
+                <ul>
+                    <li>
+                        <div class="box-icon">
+                            <img src="#" alt="">
+                        </div>
+                        <div class="box-text">
+                            <span>&dollar;12.5B USD</span>
+                            <p>Revenue generated from the Shopify ecosystem (2020)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-icon">
+                            <img src="#" alt="">
+                        </div>
+                        <div class="box-text">
+                            <span>3 in 4 merchants use apps</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-icon">
+                            <img src="#" alt="">
+                        </div>
+                        <div class="box-text">
+                            <span>Average number of apps installed per merchant</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+        <section class="community-builders">
+            <div class="community-builders-cards">
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <h2>Join a community of builders</h2>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">Developer forums</p>
+                        <p>Q&A and advice from Shopify community experts</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">#development on Slack</p>
+                        <p>Collaboration and connection with Shopify employees</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">@ShopifyDevs on Twitter</p>
+                        <p>Product announcements, API updates, tips and more</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">Developer Changelog</p>
+                        <p>The latest Shopify ecosystem updates</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">ShopifyDevs YouTube channel</p>
+                        <p>Tips and insights in dev and design</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">ShopifyDevs Discord server</p>
+                        <p>Chat with other Shopify developers</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="#" alt="">
+                        <p class="heading-4">Shopify Partners blog</p>
+                        <p>Educational resources and product previews</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-wrapper">
+                <nav class="footer-links-list">
+                    <ul><h3 class="heading-4">News and updates</h3>
+                        <li><a href="">Developer changelog</a></li>
+                        <li><a href="">Shopify status</a></li>
+                    </ul>
+                    <ul><h3 class="heading-4">Blogs</h3>
+                        <li><a href="">Partner blog</a></li>
+                        <li><a href="">Engineering blog</a></li>
+                        <li><a href="">UX blog</a></li>
+                    </ul>
+                    <ul><h3 class="heading-4">Community</h3>
+                        <li><a href="">Developer forums</a></li>
+                        <li><a href="">Devs Discord</a></li>
+                        <li><a href="">Facebook group</a></li>
+                    </ul>
+                    <ul><h3 class="heading-4">Social</h3>
+                        <li><a href="">Twitch</a></li>
+                        <li><a href="">YouTube</a></li>
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                    <ul><h3 class="heading-4">Events</h3>
+                        <li><a href="">Unite</a></li>
+                        <li><a href="">Meetups</a></li>
+                        <li><a href="">Partner Town Hall</a></li>
+                    </ul>
+                    <ul><h3 class="heading-4">Legal</h3>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">API Terms of Service</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Partner program agreement</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">About Shopify</a></li>
+                        <li><a href="#">Shopify Plus</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Press and Media</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </body>
