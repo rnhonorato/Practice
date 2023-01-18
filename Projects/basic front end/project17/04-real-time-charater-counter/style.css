@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #5DA7DB;
+    font-family: cursive;
+    box-sizing: border-box;
+    /* text-align: start; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;    
+    background-color: #81C6E8;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(88, 55, 208, 0.6);
+    width: 550px;
+}
+
+
+
+
+.input-tweet{
+    margin-top: 20px;
+    height: 170px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;    
+    font-family: inherit;
+    
+
+}
+
+.countdown-container{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}

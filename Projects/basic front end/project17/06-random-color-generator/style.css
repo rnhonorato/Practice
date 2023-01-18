@@ -1,0 +1,42 @@
+body{
+    margin 0;
+    padding: 1rem;
+    font-family: cursive;
+}
+
+li{
+    list-style: none;
+}
+
+.section-heading{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 2.5rem 3rem;
+}
+
+.input-colors{
+    width: 50px;
+}
+
+.heading{
+    
+}
+
+.content-section{
+    display: flex;
+    flex-flow: row wrap;    
+    gap: 0.5rem;
+    padding: 0 2rem;
+}
+
+.box
+{
+    background-color: red;
+    padding: 2.5rem 3rem ;
+    width: fit-content;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: white;
+
+}

@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+.heading-section{
+    background-image: url("imagem-header.jpg");    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+    color: #7F167F;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.paragraph{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: #F56EB3;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    transition: background-color 0.4s;
+}
+
+.nav-ul{
+    display: flex;
+    list-style-type: none;   
+    
+}
+
+
+
+.nav-li a{
+    text-decoration: none;
+    margin: 0 10px;    
+    color: #7F167F;
+    font-family: cursive;
+}
+
+.logo{
+    width: 200px;    
+}
+
+
+.navbar.sticky{
+    background-color: #7F167F;
+}
+
+.navbar.sticky ul li a{    
+    color: #F56EB3;
+}
+

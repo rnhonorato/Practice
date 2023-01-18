@@ -1,0 +1,373 @@
+:root {
+    /* font  */
+
+
+    --clr-accent-100: hsl(35, 77%, 62%);
+    --clr-accent-200: hsl(5, 85%, 63%);
+
+
+    --clr-neutral-100: hsl(36, 100%, 99%);
+    --clr-neutral-200: hsl(233, 8%, 79%);
+    --clr-neutral-300: hsl(234, 9%, 58%);
+    --clr-neutral-400: hsl(240, 100%, 5%);
+
+
+
+    --clr-body-background: var(--clr-neutral-100);
+
+    --clr-button-main-background: var(--clr-accent-200);
+
+
+    --clr-news-background: var(--clr-neutral-400);
+    --clr-news-headings: var(--clr-neutral-100);
+    --clr-news-paragraph: var(--clr-neutral-300);
+
+
+    --clr-ol-articles: var(--clr-neutral-300);
+
+    --clr-paragraph: var(--clr-neutral-300);
+
+
+    --ff-primary: 'Inter', sans-serif;
+
+
+    --ff-body: var(--ff-primary);
+
+
+    --fs-default: 15px;
+
+
+    --fs-body: var(--fs-default);
+
+
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+
+}
+
+/*reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+
+}
+
+body {
+    width: 375px;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body);
+    line-height: 1.2;
+    margin: 0 auto;
+    /* background-color: var(--clr-body-background); */
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+
+/* general styling */
+
+body {
+    padding: 1rem;
+    padding-bottom: 5rem;
+
+}
+
+main {
+    padding-top: 3rem;
+}
+
+p {
+    color: var(--clr-paragraph);
+    line-height: 1.6;
+}
+
+.header__container {}
+
+.logo-image {
+    width: 90%;
+}
+
+
+.menu__nav {
+    position: fixed;
+    background-color: var(--clr-body-background);
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 33px;
+    margin-top: -18px;
+}
+
+.ul__menu__nav {
+    list-style: none;
+    color: var(--clr-neutral-400);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    left: -100%;
+    top: 40px;
+    gap: 1rem;
+}
+
+
+.ul__menu__nav.active {
+    left: 0;
+    padding: 1rem;
+    padding-top: 100px;
+    margin-left: 150px;
+    background-color: white;
+
+}
+
+
+.main__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.img__main__section {
+    margin-bottom: 1.5rem;
+    background-size: cover;
+    height: 330px;
+
+
+}
+
+.heading__main__section {
+    font-size: 2.5rem;
+    font-weight: var(--fw-extra-bold);
+    line-height: 1;
+    padding-right: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.main__headings__new {
+    font-size: 2rem;
+    color: var(--clr-accent-100);
+}
+
+.paragraph__main__section {
+    margin-bottom: 1rem;
+}
+
+.button__main__section {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 1rem 1.7rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-button-main-background);
+    /* font-size: 12px; */
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.main__news {
+    background-color: var(--clr-news-background);
+    padding: 1.2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+}
+
+.news__articles:not(:last-child) {
+    border-bottom: 0.5px solid var(--clr-neutral-300);    
+}
+
+.headings__news {
+    color: var(--clr-news-headings);
+    margin-top: 1rem;
+}
+
+.paragraph__news {
+    margin-top: 0.5rem;
+    color: var(--clr-news-paragraph);
+    padding-bottom: 1.5rem;
+}
+
+.paragraph__news:last-child {
+    margin-bottom: 0rem;
+}
+
+
+
+.articles__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img__articles {
+    max-width: 30%;
+    object-fit: scale-down;
+}
+
+.container__articles {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ol__articles {
+    font-size: 2rem;
+    color: var(--clr-ol-articles);
+    margin-bottom: 0.5rem;
+}
+
+.heading__articles {
+    font-weight: var(--fw-extra-bold);
+    margin-bottom: 0.75rem;
+}
+
+
+@media(min-width: 40em){
+    .img__main__section{
+        background-image: url('../images/image-web-3-mobile.jpg');
+    }
+}
+
+
+/* @media(min-width: 40em) */
+@media screen and (min-width: 40em ) {
+    body {
+        width: 1440px;
+        padding: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    main {
+        padding-top: 3rem;
+    }
+
+    .hamburger__nav {
+        display: none;
+    }
+
+    .menu__nav {
+        position: relative;
+        padding-right: 105px;
+    }
+
+    .ul__menu__nav {
+        left: 0;
+        top: 0;
+        width: fit-content;
+        flex-direction: row;
+        position: relative;
+        gap: 2rem;
+
+    }
+
+    .main__section {
+        flex-direction: row;
+        
+    }
+
+    .img__main__section {
+        background: url('../images/image-web-3-desktop.jpg');
+        background-size: cover;
+        height: 330px;
+        width: 800px;
+        /* display: none; */
+
+    }
+
+    .main__header {
+        display: flex;
+        gap: 4.3rem;
+
+    }
+
+    .heading__main__section{
+        font-size: 3.8rem;
+        width: 350px;
+        padding-right: 0;
+        
+       
+    }
+    .paragraph__main__section{
+        width: 400px;
+        font-size: 1.1rem;
+        
+    }
+
+    .main__news{
+        width: 350px;
+        height: 470px;
+
+    }
+
+    .button__main__section{
+        width: fit-content;
+    }
+
+    .main__split{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+
+    .articles__section{
+        flex-direction: row;
+        gap: 0.3rem;
+    }
+
+    .top__articles{
+        width: 210px;
+    }
+
+    .item__menu:hover{
+        color: var(--clr-accent-100);
+        cursor:pointer;
+    }
+   
+
+    .headings__news:hover{
+        color: var(--clr-accent-100);
+        cursor:pointer;
+    }
+
+    .button__main__section:hover{
+        background-color: var(--clr-neutral-400);
+        cursor: pointer;
+    }
+
+    .heading__articles:hover{
+        color: var(--clr-accent-100);
+        cursor:pointer;
+    }
+
+}

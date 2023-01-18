@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To much for a tweet?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="tweet-count">
+            <h1>To much for a tweet?</h1>
+        </label>
+        <textarea onkeyup="countChar(this)" rows="5" maxlength="280" class="input-tweet" type="text" id="tweet-count" autofocus autocomplete="off" placeholder="What's hapenning ?"></textarea>
+        <div class="countdown-container">
+            <h3 class="heading-total-char">Total Charaters: <span id="total-char" class="span-total-char"></span></h3>
+            <h3 class="heading-remaining-char">Reaming: <span id="remaining-char" class="span-remaining-char"></span></h3>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
