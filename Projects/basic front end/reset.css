@@ -6,10 +6,18 @@
     --clr-accent-200: hsl(245, 75%, 52%);
 
 
-    --clr-neutral-100: hsl(225, 100%, 98%);
-    --clr-neutral-200: hsl(224, 23%, 55%);
-    --clr-neutral-300: hsl(223, 47%, 23%);
-    --clr-neutral-400: hsla(234, 78%, 95%, 0.651);
+
+    /* Neutral Palettes */
+
+    --clr-neutral-100: #f8f9fa;
+    --clr-neutral-200: #e9ecef;
+    --clr-neutral-300: #dee2e6;
+    --clr-neutral-400: #ced4da;
+    --clr-neutral-500: #adb5bd;
+    --clr-neutral-600: #6c757d;
+    --clr-neutral-700: #495057;
+    --clr-neutral-800: #343a40;
+    --clr-neutral-900: #212529;
 
 
 
@@ -129,10 +137,8 @@ a:hover {
 
 /* 
  fade background scroll
-
 html
 <div class="bg-img" id="bg-img"></div>
-
 css
 .bg-img {
     width: 100%;
@@ -140,32 +146,19 @@ css
     background-image: url("link/caminho");
     background-size: 180%;
     background-position: center;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;    
 }
-
-
-
-
 javascript
-
 const bgImageEl = document.getElementById("bg-img");
-
 window.addEventListener("scroll", ()=>{
     updateImage();
 })
-
-
-
 function updateImage(){
     bgImageEl.style.opacity = 1 - window.pageYOffset / 800
     bgImageEl.style.backgroundSize = 160 - window.pageYOffset / 12 + "%"
 }
+*/
 
-
-
-
-
-
-
+/* simple box-shadow
+box-shadow: 0px 4px 8px rgba(0, 0, 0, .3); 
 */

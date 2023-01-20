@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #e0b1cb;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.section-drum {
+    text-align: center;
+}
+
+.drum-heading {
+    font-size: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    white-space: nowrap;
+}
+
+.drum-kit {
+    font-family: cursive;
+    margin: 10px;
+    min-width: 200px;
+    color: white;
+    border: none;
+    font-size: 30px;
+    background-color: white;
+    padding: 30px 55px;
+    border-radius: 10px;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    background-image: url("image/tom.png");
+    background-size: cover;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.drum-kit:hover{
+    color: pink;
+}
+
+.drum-kit:active{
+    background-size: 105%;
+}
