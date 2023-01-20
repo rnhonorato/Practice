@@ -95,9 +95,19 @@ a:hover {
 
 
 
+
+
+
 .container {
     margin-inline: auto;
     width: min(90% 70.5rem);
+
+
+    /* deixar bem no meio */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
 }
 
 .split {
@@ -114,3 +124,48 @@ a:hover {
         flex-basis: 100%;
     }
 }
+
+
+
+/* 
+ fade background scroll
+
+html
+<div class="bg-img" id="bg-img"></div>
+
+css
+.bg-img {
+    width: 100%;
+    height: 100vh; (pagina inteira)
+    background-image: url("link/caminho");
+    background-size: 180%;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+javascript
+
+const bgImageEl = document.getElementById("bg-img");
+
+window.addEventListener("scroll", ()=>{
+    updateImage();
+})
+
+
+
+function updateImage(){
+    bgImageEl.style.opacity = 1 - window.pageYOffset / 800
+    bgImageEl.style.backgroundSize = 160 - window.pageYOffset / 12 + "%"
+}
+
+
+
+
+
+
+
+*/
