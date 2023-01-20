@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* display: flex;
+    flex-direction: column;    
+    align-items: center; */
+
+}
+
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("header-image.jpg");
+    background-size: 180%;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.main-section {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading{
+    font-size: 50px;
+}
+.main-paragraph {
+    text-align: justify;
+}
+
+
+
+@media(max-width:50em) {
+    .main-section {
+        padding: 10px;
+    }
+}

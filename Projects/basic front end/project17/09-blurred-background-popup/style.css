@@ -1,0 +1,134 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    background-color: #432818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffe4c4;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.body-background-img {
+    width: 1440px;
+    height: 100vh;
+    background-image: url(body-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    transition: filter 0.7s;
+}
+
+.body-background-img.active {
+    -webkit-filter: blur(5px);
+    filter: brightness(0.5);
+}
+
+
+.main-section.active {
+    -webkit-filter: blur(5px);
+}
+
+
+
+.main-section {
+    max-width: 650px;
+    padding: 5px;
+}
+
+.main-heading {
+    font-size: 35px;
+}
+
+.main-paragraph {
+    font-size: 18px;
+}
+
+.main-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #432818;
+    color: #e7d8c9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.popup-section {
+    background-image: url(newsletter-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #432818;
+    gap: 10px;
+    visibility: hidden;
+    transition: all 0.7s;
+    opacity: 0;
+    
+}
+
+
+.popup-section.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.popup-heading {
+    margin: 0;
+}
+
+
+
+.popup-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.input-email {
+    align-self: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-email::placeholder {
+    color: #a99985;
+}
+
+
+.popup-btn {
+    width: 105%;
+    border-radius: 5px;
+    align-self: center;
+    border: none;
+    background-color: #432818;
+    color: #e7d8c9;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.popup-btn:hover,
+.main-btn:hover {
+    filter: brightness(0.9);
+}
+
+.close-icon {
+    position: absolute;
+    left: 325px;
+    top: 8px;
+    cursor: pointer;
+}
